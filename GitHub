@@ -1,0 +1,20 @@
+Q) What is a merge conflict in Git?
+A merge conflict is an event that takes place when Git is unable to resolve differences in code between the two commits automatically. 
+Git is able to automatically merge the changes only if the commits are on different lines or branches.
+
+Q) How do you resolve a merge conflict?
+To resolve a merge conflict in Git, follow these steps:
+The most simple way to resolve the conflicted file is to open it and make the required changes
+After editing the file, we can use the git add command to stage the new merged content
+The final step is to create a new commit with the help of the git commit command
+Git will create a new merge commit to finalize the merge
+
+Q) What is Git stash?
+If we dont want to make commit to current working branch but you wanted to switch to other branch with out loosing the current unsaved data, then we use git stash. 
+To go back to the work where you left then we use the stash pop.
+
+Q) What is the difference between git merge and git rebase?
+Both will do the same work by making feature brach code into master branch. But by using 
+Merge it adds an additional commit to the master 
+Rebase will bring all the feature branch changes to the master branch at the tip of its head with out loosing the history of feature branch commits.
+
