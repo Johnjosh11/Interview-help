@@ -87,3 +87,7 @@ install: install the package to a local repository
 deploy: copy the package to the remote repository
 
 mvn clean deploy 
+
+Q) How do you run the job on slave
+Using Lables we define on which node the job need to run. or it is pipeline hob then we declare it in the begining of the script
+
