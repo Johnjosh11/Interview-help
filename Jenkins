@@ -1,0 +1,89 @@
+Q) What is Jenkins?
+Jenkins is a free open source Continuous Integration tool and It is just a program which is writtern in Java and has multiple pluggins.
+Jenkins is nothing without the plugins. It is used for automation.
+
+Q) What is Continuous Integration in Jenkins?
+Continuous integration is the process of continuously checking-in the developer’s code into a version control system 
+and triggering the build to check and identify bugs in the written code.
+Continuous Integration comprises of:
+
+Development and Compilation
+Database Integration
+Unit Testing
+Production Deployment
+Code Labeling
+Functional Testing
+Generating and Analyzing Reports
+
+Q) How do you install Jenkins?
+Install Java Version 8 – Jenkins is a Java based application, hence Java is a must.
+Install Apache Tomcat Version 9 – Tomcat is essential to deploy Jenkins war file.
+Download Jenkins war File – This war is must to install Jenkins.
+Deploy Jenkins war File – You deploy Jenkins war file using Tomcat to run Jenkins.
+Install Suggested Plugins – Install a list of plugins suggested by Jenkins.
+Once the installation is complete, you will be able to see the Jenkins dashboard.
+
+Start Jenkins: jenkins.exe start
+Stop Jenkins: jenkins.exe stop
+Restart Jenkins: jenkins.exe restart
+
+Q) What are the types of pipelines in Jenkins?
+There are 3 types –
+
+CI CD pipeline (Continuous Integration Continuous Delivery)
+Scripted pipeline
+Declarative pipeline
+
+Q) Give any simple example of Jenkins script.
+
+Answer: This is a Jenkins declarative pipeline code for Java:
+
+pipeline {
+    agent
+    stages {
+          stage('Building your first asset') {
+               agent
+               steps {
+                   echo 'Build asset'
+    }
+    }
+        stage('Test') {
+             agent
+             steps {
+                   echo 'Building project 1'
+             }
+            }
+         }
+}
+
+The above code has 3 major elements
+
+Pipeline: The block of script contents.
+Agent: Defines where the pipeline will start running from.
+Stage: The pipelines contain several steps enclosed in the block called Stage.
+
+Q) Most commonly  used plugins
+Git
+Maven 2 Project
+HTML Publisher
+Copy Artcraft
+Amazon EC2
+Kuberneters
+Dockers
+Pipeline 
+Folder
+Sonarqube
+pipeline
+Test Results Analyzer
+
+Q) Maven Life Cycle
+validate: check if all information necessary for the build is available
+compile: compile the source code
+test-compile: compile the test source code
+test: run unit tests
+package: package compiled source code into the distributable format (jar, war, …)
+integration-test: process and deploy the package if needed to run integration tests
+install: install the package to a local repository
+deploy: copy the package to the remote repository
+
+mvn clean deploy 
